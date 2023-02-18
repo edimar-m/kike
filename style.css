@@ -1,0 +1,83 @@
+/*Contenedor general*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-image: linear-gradient(315deg,#B5B9CC  0%, #31385A 74%);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/*imagen-cloud*/
+.about-image{
+    width: 80%;
+    align-content: center;
+}
+
+/*Links de navegación*/
+
+.social-links-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+}
+ 
+/*Links de cntacto*/
+
+.social-links-list {
+    display: flex;
+    margin: 10px 0px;
+    
+}
+
+
+/*Iconos-links de contacto*/
+
+#social-icon {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 2.7rem;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+#social-icon:focus ,
+#social-icon-link:hover {
+    color: #fff;
+    background-color: #F05F25;
+}
+.social-link-spotify{
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    padding-top: 0.5rem;
+}
+
+/*Media queries*/
+
+@media
+ (min-width: 320px) and (max-width: 900px){
+
+  .main{
+      padding-bottom: 2rem;
+  }
+}
