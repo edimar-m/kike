@@ -9,19 +9,20 @@
     color: white;
     font-weight: bold;
     width: 100%;
-    height: 140vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
-    padding: 30vh;
+    padding-bottom: 50vh;
+    padding-top: 50vh;
     border: none;
 }
 
 /*imagen-cloud*/
 .about-image{
-    width: 80%;
+    width: 100%;
     align-content: center;
 }
 
