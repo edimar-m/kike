@@ -70,14 +70,14 @@ ul {
 
 .nav-social-link{
     border-radius: 50px;
-    background-color: #F05F25;
+    border: 3px solid #ffff;
     padding: 3px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .nav-social-link:focus ,
 .nav-social-link:hover {
-    background-color: #fea07b;
+    background-color: #f87440;
 }
 
