@@ -22,12 +22,13 @@ span{
 }
 
 /*imagen-cloud*/
+
 .about-image{
     width: 100%;
     align-content: center;
     margin: 0;
     padding: 0;
-    animation: fadeInDown 4s linear;
+    animation: fadeIn 6s linear;
 }
 
 .text{
@@ -58,13 +59,11 @@ ul {
    padding: 0;
    text-align: center;
    transition: 0.3s;
-   animation: fadeInDown 4s linear;
 }
-/*Animaciones al final de social-links-list*/
 
 /*Iconos-links de contacto*/
 
-#social-icon {
+#social-icon-1{
     font-size: 2rem;
     width: 4rem;
     height: 4rem;
@@ -72,6 +71,38 @@ ul {
     display: block;
     text-align: center;
     transition: 0.3s;
+}
+#social-icon-2{
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 2.7rem;
+  display: block;
+  text-align: center;
+  transition: 0.3s;
+}
+#social-icon-3{
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 2.7rem;
+  display: block;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/*Animaciones al final de social-links-list*/
+
+#social-icon-1{
+  animation: fadeIn 6s 3s linear;
+}
+
+#social-icon-2{
+  animation: fadeIn 8s 3s linear;
+}
+
+#social-icon-3{
+  animation: fadeIn 10s 3s linear;
 }
 
 .nav-social-link{
@@ -88,7 +119,48 @@ ul {
 .nav-social-link:hover {
     background-color: #f87440;
 }
-/*Animación*/
+/************************************Animaciones *********************************/
+
+/* Fading nube*/
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+/*fadeInDown*/
 
 @-webkit-keyframes fadeInDown {
     from {
@@ -151,7 +223,105 @@ ul {
     animation-name: fadeInDownBig;
   }
 
-  /*Media queries*/
+/* Bouncing entrances para los iconos */
+@-webkit-keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.animate__bounceIn {
+  -webkit-animation-duration: calc(1s * 0.75);
+  animation-duration: calc(1s * 0.75);
+  -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-duration: calc(var(--animate-duration) * 0.75);
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+  /*************************Media queries*****************************/
 
 @media
 (min-width: 320px) and (max-width: 900px){
@@ -163,7 +333,21 @@ ul {
 .social-links-list{
   width: 80%;
 }
-#social-icon{
+#social-icon-1{
+  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 1rem;
+}
+
+#social-icon-2{
+  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 1rem;
+}
+
+#social-icon-3{
   font-size: 3rem;
   width: 3rem;
   height: 3rem;
