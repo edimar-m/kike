@@ -15,6 +15,8 @@ body{
     justify-content: center;
     border: none;
     margin: 0;
+    width: 100vw;
+    height: 200vh;
 }
 span{
     font-size: 1.5rem;
@@ -46,7 +48,7 @@ ul {
     list-style: none;
 }
 
-/*Links de cntacto*/
+/*Links de contacto*/
 
 
 .social-links-list {
@@ -54,7 +56,9 @@ ul {
    margin: 10px 0px;
    text-align: center;
    transition: 0.3s;
+   animation: fadeInDown 4s linear;
 }
+/*Animaciones al final de social-links-list*/
 
 /*Iconos-links de contacto*/
 
@@ -74,10 +78,73 @@ ul {
     padding: 3px;
     margin-right: 1rem;
     margin-left: 1rem;
+    transition: background-color is linear;
+    cursor: pointer;
 }
 
 .nav-social-link:focus ,
 .nav-social-link:hover {
     background-color: #f87440;
 }
+/*Animación*/
 
+@-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animate__fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+  @-webkit-keyframes fadeInDownBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInDownBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animate__fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig;
+  }
