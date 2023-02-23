@@ -93,18 +93,6 @@ ul {
 
 /*Animaciones al final de social-links-list*/
 
-#social-icon-1{
-  animation: fadeIn 6s 3s linear;
-}
-
-#social-icon-2{
-  animation: fadeIn 8s 3s linear;
-}
-
-#social-icon-3{
-  animation: fadeIn 10s 3s linear;
-}
-
 .nav-social-link{
     border-radius: 50px;
     border: 3px solid #ffff;
