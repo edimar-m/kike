@@ -1,10 +1,8 @@
 /*Contenedor general*/
-body{
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
 }
 .main{
     background-image: linear-gradient(315deg,#B5B9CC  0%, #31385A 74%);
@@ -14,9 +12,9 @@ body{
     align-items: center;
     justify-content: center;
     border: none;
-    margin: 0;
+    margin-top: 0;
     width: 100vw;
-    height: 200vh;
+    height: 170vh;
 }
 span{
     font-size: 1.5rem;
@@ -54,6 +52,7 @@ ul {
 .social-links-list {
    display: flex;
    margin: 10px 0px;
+   padding: 0;
    text-align: center;
    transition: 0.3s;
    animation: fadeInDown 4s linear;
@@ -148,3 +147,26 @@ ul {
     -webkit-animation-name: fadeInDownBig;
     animation-name: fadeInDownBig;
   }
+
+  /*Media queries*/
+
+@media
+(min-width: 320px) and (max-width: 900px){
+
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+.social-links-list{
+  width: 30%;
+}
+#social-icon{
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 1rem;
+}
+span{
+  font-size: 0.9rem;
+}
+}
